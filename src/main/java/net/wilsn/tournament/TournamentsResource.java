@@ -1,8 +1,7 @@
 package net.wilsn.tournament;
 
-import io.quarkus.hibernate.orm.rest.data.panache.PanacheEntityResource;
+import javax.ws.rs.Path;
 
-import java.util.UUID;
-
-public interface TournamentsResource extends PanacheEntityResource<Tournament, Long> {
+@Path("/tournaments")
+public class TournamentsResource extends AbstractResource<Tournament> {
 }
